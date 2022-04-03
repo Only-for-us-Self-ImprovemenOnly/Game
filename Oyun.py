@@ -1,6 +1,6 @@
 import Oyun
 import Yapimcilar
-
+import Yol
 
 def OyunMenusu():
         print("\n")
@@ -28,12 +28,6 @@ def OyunMenusu():
                 print("Yanlış Tuşlama Yaptınız.")
 
 
-
-
-
-
-
-
 def OyunBaslama():
     print("*Oyuna Hoşgeldin*")
     print("Karakter Seçmen Gerekicek (Dikkatli Seç)")
@@ -43,17 +37,25 @@ def OyunBaslama():
     print("1-) Samuray, Str : 5 , Agl : 4 , Hlt : 2")
     print("2-) Okçu   , Str : 7 , Agl : 2 , Hlt : 1")
     print("3-) Ucube  , Str : 5 , Agl : 4 , Hlt : 2")
+    print("--> Menu Gitmek İçin '0' Rakamına Bas")
 
     while 1 :
-        secim = int(input("Seçimini yap (1,2,3) : "))
+        secim = int(input("Seçimini yap (1,2,3,0) : "))
         if secim == 1 :
             print("Samuray Hikayesi.......")
+            Yol.YolUzeri()
             break
         elif secim == 2 :
             print("Okçu Hikayesi..........")
+            Yol.YolUzeri()
             break
         elif secim == 3 :
             print("Ucube Hikayesi..........")
+            Yol.YolUzeri()
+            break
+        elif secim == 0  :
+            print("Menuye Donuluyor..")
+            Oyun.OyunMenusu()
             break
         else :
             print("Yanlış Tuşlama Yaptın ! ")
