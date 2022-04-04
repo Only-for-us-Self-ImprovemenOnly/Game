@@ -2,6 +2,8 @@ import Oyun
 import Yapimcilar
 import Yol
 
+
+
 def OyunMenusu():
         print("\n")
         print(" --> Oyun Menüsüne Gitmek İçin 's' e bas")
@@ -44,6 +46,7 @@ def OyunBaslama():
         if secim == 1 :
             print("Samuray Hikayesi.......")
             Yol.YolUzeri()
+
             break
         elif secim == 2 :
             print("Okçu Hikayesi..........")

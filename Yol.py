@@ -1,5 +1,5 @@
 import Oyun
-
+import Mekanik
 def YolUzeri():
     print("Vadiye Hoş Geldin..")
     print("Dikkatli Ol Yol Üstünde Gizli Düşmanların Var")
@@ -11,6 +11,7 @@ def YolUzeri():
         secim = int(input("Seçimin : "))
         if secim == 1 :
             print("Burada Savas Alanına Gidicek")
+            Mekanik.Iskelet(5, 4, 20)
         elif secim == 2 :
             Oyun.OyunBaslama()
             break
