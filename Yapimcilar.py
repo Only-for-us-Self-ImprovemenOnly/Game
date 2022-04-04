@@ -4,7 +4,7 @@ import Oyun
 def YapımcılarMenusu():
     print("\n")
     print("-----------------")
-    print("Yapımcılar \nUğur Can Yıldız")
+    print("Yapımcılar \nUğur Can Yıldız\nMuhammed Raşit Özgün")
     print("------------------")
     while 1 :
         print("Geri Çıkmak için b tuşuna basınız.")
